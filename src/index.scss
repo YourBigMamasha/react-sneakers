@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: 'inter',sistem-ui;
+  -wevkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+}
+
+* {
+  font-family: 'inter', sistem-ui;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 85px;
+  
+
+  * {
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #EAEAEA
+}
+ .headerLeft {
+  display: flex;
+  align-items: center;
+
+    img {
+      margin-right: 15px;
+    }
+
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    p {
+      opacity: 0.5;
+    }
+  
+ }
+
+  .headerRight {
+    display: flex;
+    
+    li {
+      margin-right: 30px;
+    }
+
+    span {
+      margin: 15px;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    padding: 40px;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .sneakers {
+    display: flex;
+  }
+  
+  .placeHolder {
+    display: flex;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    padding: 0 15px;
+
+    input {
+      border: 0;
+      padding: 13px;
+      font-size: 16px;
+      width: 200px;
+    }
+  }
+
+  .contentBeginning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  .drawwer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 420px;
+    height: 100%;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .items {
+      overflow: auto;
+      margin-bottom: 50px;
+      flex: 1;
+    }
+  }
+
+  .itemCart {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s ease-in-out; transform: 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+      transform: translateY(-5px);
+    }
+
+    .itemCartSneakersImg {
+      height: 70px;
+      width: 70px;
+      background-size: contain;
+      background-position: 0 -3px;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+    }
+
+    p{
+      margin-bottom: 5px;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    b {
+      font-size: 14px;
+    }
+  }
+
+  .itemCartSneakersImg {
+    margin-right: 20px;
+  }
+
+  .PBClass {
+    margin-right: 20px;
+    flex: 1;
+  }
+
+  .itemCartDelete {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+  .cartTotalBLock {
+  ul {
+    display: block;
+    margin-bottom: 40px !important;
+
+    li {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    div {
+      flex: 1;
+      height: 1px;
+      border-bottom: 1px dotted #DFDFDF;
+      position: relative;
+      top: -4px;
+      margin: 0 7px;
+    }
+
+   
+  }
+
+  .greenButton {
+      width: 100%;
+      height: 55px;
+      background: #9DD558;
+      border-radius: 18px;
+      border: 0;
+      color: #F3F3F3;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s ease-in-out;
+
+      &:hover {
+        background: lighten(#9DD558, 10%);
+
+        img {
+          transform: translateX(5px);
+        }
+      }
+      &:active {
+        background: darken(#9DD558, 5%);
+      }
+      
+      
+      position: relative;
+
+      img {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        transition: transform 0.15s ease-in-out;
+      }
+    
+  }
+  }
